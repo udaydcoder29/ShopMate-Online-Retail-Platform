@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laptops | ShopMate</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+
+body{
+    background-image:url("background.png");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+}
+
+.overlay{
+    background:rgba(255,255,255,0.92);
+    min-height:100vh;
+    padding-bottom:40px;
+}
+
+.header{
+    text-align:center;
+    padding:20px;
+    font-size:30px;
+    font-weight:bold;
+    background:#f1f1f1;
+}
+
+.product{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+    padding:40px;
+}
+
+.images{
+    width:350px;
+}
+
+.images img{
+    width:100%;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+.details{
+    width:420px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #aaa;
+    padding:10px;
+}
+
+th{
+    background:#0073ff;
+    color:white;
+}
+
+.video{text-align:center;margin-top:30px;}
+iframe{width:90%;max-width:600px;height:315px;border-radius:10px;}
+
+.back{text-align:center;margin-top:30px;}
+.back a{
+    text-decoration:none;
+    background:#0073ff;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<div class="header">Laptops</div>
+
+<div class="product">
+
+<div class="images">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+<img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed">
+</div>
+
+<div class="details">
+<h2>Overview</h2>
+<p>High-performance laptops for work, study, and gaming.</p>
+
+<h2>Specifications</h2>
+<table>
+<tr><th>Feature</th><th>Details</th></tr>
+<tr><td>Processor</td><td>Intel i5 / i7, AMD Ryzen</td></tr>
+<tr><td>RAM</td><td>8 GB / 16 GB</td></tr>
+<tr><td>Storage</td><td>512 GB SSD</td></tr>
+<tr><td>Display</td><td>15.6 inch Full HD</td></tr>
+<tr><td>OS</td><td>Windows 11</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="video">
+<iframe src="VIDEO_URL_HERE" allowfullscreen></iframe>
+</div>
+
+<div class="back">
+<a href="form.html">BUY NOW</a>
+</div>
+
+</div>
+</body>
+</html>

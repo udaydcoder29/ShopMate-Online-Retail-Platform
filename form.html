@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now | ShopMate</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-image: url("background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .overlay{
+            background: rgba(255,255,255,0.92);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .form-box{
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .form-box h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #0073ff;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+        }
+
+        textarea{
+            resize: none;
+            height: 80px;
+        }
+
+        .submit-btn{
+            width: 100%;
+            padding: 12px;
+            background: #0073ff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover{
+            background: #005ec4;
+        }
+
+        .back{
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back a{
+            text-decoration: none;
+            color: #0073ff;
+            font-weight: bold;
+        }
+
+        @media(max-width: 600px){
+            .form-box{
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <!-- ✅ BASIC JAVASCRIPT -->
+    <script>
+        function placeOrder(event){
+            event.preventDefault(); // stop page refresh
+
+            alert("Order placed successfully!\nThank you for shopping with ShopMate 😊");
+
+            // redirect to thank you page
+            window.location.href = "thankyou.html";
+        }
+    </script>
+
+</head>
+
+<body>
+<div class="overlay">
+
+    <div class="form-box">
+        <h2>Order Details</h2>
+
+        <!-- JS function linked here -->
+        <form onsubmit="placeOrder(event)">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone number" required>
+
+            <label>Delivery Address</label>
+            <textarea placeholder="Enter full address" required></textarea>
+
+            <label>Pincode</label>
+            <input type="number" placeholder="Enter pincode" required>
+
+            <label>Product</label>
+            <select required>
+                <option>Select Product</option>
+                <option>iPhone 15 Pro</option>
+                <option>Samsung Galaxy S23</option>
+                <option>OnePlus 12</option>
+                <option>Laptop</option>
+                <option>Headphones</option>
+                <option>Smart TV</option>
+                <option>Electrical Equipment</option>
+            </select>
+
+            <label>Quantity</label>
+            <select required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+
+        <div class="back">
+            <a href="index.html">← Back to Shop</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

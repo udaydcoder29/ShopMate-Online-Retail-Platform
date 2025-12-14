@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | ShopMate</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image:url(background.png);
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+}
+
+/* HEADER */
+.header{
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.brand{
+    font-size:28px;
+    font-weight:bold;
+    color:#0a3d62;
+}
+
+nav a{
+    text-decoration:none;
+    color:#0a3d62;
+    font-size:18px;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+/* CONTACT BOX */
+.contact-box{
+    max-width:600px;
+    margin:100px auto;
+    background:rgba(255,255,255,0.9);
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.contact-box h2{
+    color:#0a3d62;
+    margin-bottom:15px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #aaa;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#0073ff;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+
+button:hover{
+    background:#005ec4;
+}
+
+/* MEDIA QUERY */
+@media (max-width:768px){
+    .header{
+        flex-direction:column;
+        gap:10px;
+    }
+    nav a{
+        margin:0 10px;
+    }
+    .contact-box{
+        margin:60px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="brand">ShopMate</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="contact-box">
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+
+    <button>Send Message</button>
+</div>
+
+</body>
+</html>

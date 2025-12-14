@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMate Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image:url("background.png");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+        }
+
+        /* ===== SEARCH BAR ===== */
+        .search {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .button {
+            height: 40px;
+            width: 50%;
+            border-radius: 10px;
+            padding: 0 15px;
+            border: 1px solid #aaa;
+        }
+
+        .submit {
+            height: 40px;
+            width: 120px;
+            border-radius: 10px;
+            border: none;
+            background: #0073ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .submit:hover {
+            background: #005ec4;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* ===== CATEGORY BOX ===== */
+        .box {
+            height: 180px;
+            width: 260px;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgba(0,0,0,0.55);
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* ===== BACKGROUND IMAGES ===== */
+        .box:nth-child(1) {
+            background-image: url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
+        }
+
+        .box:nth-child(2) {
+            background-image: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8");
+        }
+
+        .box:nth-child(3) {
+            background-image: url("https://images.unsplash.com/photo-1505740420928-5e560c06d30e");
+        }
+
+        .box:nth-child(4) {
+            background-image: url("https://images.unsplash.com/photo-1593784991095-a205069470b6");
+        }
+
+        .box:nth-child(5){
+    background-image: url("https://images.unsplash.com/photo-1581092335397-9583eb92d232");
+}
+
+
+        .box:nth-child(6) {
+            background-image: url("https://images.unsplash.com/photo-1581092160562-40aa08e78837");
+);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .button {
+                width: 70%;
+            }
+
+            .submit {
+                width: 100px;
+                margin-top: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SEARCH -->
+    <div class="search">
+        <input type="text" placeholder="Search for anything" class="button">
+        <input type="submit" value="Search" class="submit">
+    </div>
+
+    <!-- CATEGORIES -->
+    <div class="container">
+        <div class="box"><a href="smartphones.html">Smartphones</a></div>
+        <div class="box"><a href="laptops.html">Laptops & Computers</a></div>
+        <div class="box"><a href="audio.html">Headphones & Speakers</a></div>
+        <div class="box"><a href="screen.html">TVs & Screens</a></div>
+        <div class="box"><a href="app.html">Smart Home Appliances</a></div>
+        <div class="box"><a href="electric.html">Electrical Equipment</a></div>
+    </div>
+
+</body>
+</html>

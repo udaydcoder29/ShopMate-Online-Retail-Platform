@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TVs & Screens | ShopMate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* SAME CSS */
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== BODY BACKGROUND ===== */
+body{
+    background-image: url("background.png"); /* change if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* ===== OVERLAY ===== */
+.overlay{
+    background: rgba(255,255,255,0.93);
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* ===== HEADER ===== */
+.header{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background: #f1f1f1;
+    color: #000;
+}
+
+/* ===== PRODUCT SECTION ===== */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* ===== IMAGE SECTION ===== */
+.images{
+    width: 350px;
+    text-align: center;
+}
+
+.images img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== DETAILS ===== */
+.details{
+    width: 420px;
+}
+
+.details h2{
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.details p{
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ===== TABLE ===== */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td{
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+}
+
+table th{
+    background: #0073ff;
+    color: white;
+}
+
+/* ===== VIDEO SECTION ===== */
+.video{
+    margin-top: 30px;
+    text-align: center;
+}
+
+iframe{
+    width: 90%;
+    max-width: 600px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* ===== BUTTON ===== */
+.back{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back a{
+    text-decoration: none;
+    padding: 10px 25px;
+    background: #0073ff;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back a:hover{
+    background: #005ec4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px){
+    .product{
+        padding: 20px;
+    }
+
+    .images, .details{
+        width: 100%;
+    }
+
+    .header{
+        font-size: 24px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<div class="header">TVs & Screens</div>
+
+<div class="product">
+<div class="images">
+<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
+<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+<img src="https://images.unsplash.com/photo-1580894894513-fbf3a01b9d3f">
+</div>
+
+<div class="details">
+<h2>Overview</h2>
+<p>Ultra-HD smart TVs with vibrant colors and immersive sound.</p>
+
+<h2>Specifications</h2>
+<table>
+<tr><th>Feature</th><th>Details</th></tr>
+<tr><td>Display</td><td>4K UHD</td></tr>
+<tr><td>Screen Size</td><td>43" / 55" / 65"</td></tr>
+<tr><td>Smart TV</td><td>Yes</td></tr>
+<tr><td>Connectivity</td><td>Wi-Fi, HDMI, USB</td></tr>
+</table>
+</div>
+</div>
+
+<div class="video">
+<iframe src="VIDEO_URL_HERE"></iframe>
+</div>
+
+<div class="back">
+<a href="form.html">BUY NOW</a>
+</div>
+
+</div>
+</body>
+</html>

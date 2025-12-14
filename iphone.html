@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Pro | ShopMate</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-image: url("background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .overlay{
+            background: rgba(255,255,255,0.92);
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+
+        /* HEADER */
+        .header{
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            background: #f1f1f1;
+            color: #000;
+        }
+
+        /* MAIN */
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        /* IMAGES */
+        .images{
+            width: 350px;
+            text-align: center;
+        }
+
+        .images img{
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* DETAILS */
+        .details{
+            width: 420px;
+        }
+
+        .details h2{
+            margin-bottom: 10px;
+        }
+
+        .details p{
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* TABLE */
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td{
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th{
+            background: #0073ff;
+            color: white;
+        }
+
+        /* VIDEO */
+        .video{
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        iframe{
+            width: 90%;
+            max-width: 600px;
+            height: 315px;
+            border-radius: 10px;
+        }
+
+        /* BUTTON */
+        .back{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back a{
+            text-decoration: none;
+            padding: 10px 20px;
+            background: #0073ff;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .back a:hover{
+            background: #005ec4;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px){
+            .product{
+                padding: 20px;
+            }
+
+            .details, .images{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="overlay">
+
+    <div class="header">iPhone 15 Pro</div>
+
+    <div class="product">
+
+        <!-- IMAGES -->
+
+        <div class="images">
+    <img src="https://m.media-amazon.com/images/I/81SigpJN1KL._SX679_.jpg">
+    <img src="https://m.media-amazon.com/images/I/71yzJoE7WlL._SX679_.jpg">
+</div>
+
+
+        <!-- DETAILS -->
+        <div class="details">
+            <h2>Overview</h2>
+            <p>
+                The iPhone 15 Pro delivers top-tier performance with a premium design,
+                powerful camera system, and ultra-smooth display experience.
+            </p>
+
+            <h2>Specifications</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Display</td>
+                    <td>6.1-inch Super Retina XDR</td>
+                </tr>
+                <tr>
+                    <td>Processor</td>
+                    <td>A17 Pro Chip</td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td>48 MP + Ultra Wide + Telephoto</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>128 GB / 256 GB / 512 GB</td>
+                </tr>
+                <tr>
+                    <td>Battery</td>
+                    <td>All-day battery life</td>
+                </tr>
+                <tr>
+                    <td>OS</td>
+                    <td>iOS 17</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video">
+        <!-- You add your video URL here -->
+        <iframe src="https://www.youtube.com/embed/h23BRF4CZiuAxgWg" allowfullscreen></iframe>
+    </div>
+
+    <!-- BACK -->
+    <div class="back">
+        <a href="form.html">BUY NOW</a>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - ShopMate</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image:url("background.png");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+}
+
+/* HEADER */
+header{
+    background:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.brand{
+    font-size:28px;
+    font-weight:bold;
+    color:#0a3d62;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:#0a3d62;
+    font-weight:bold;
+}
+
+/* CONTENT */
+.about-box{
+    max-width:700px;
+    margin:80px auto;
+    background:rgba(255,255,255,0.9);
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.about-box h2{
+    margin-bottom:15px;
+    color:#0a3d62;
+}
+
+.about-box p{
+    line-height:1.6;
+}
+
+/* MEDIA QUERY */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+
+    .about-box{
+        margin:40px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="brand">ShopMate</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="about-box">
+    <h2>About ShopMate</h2>
+    <p>
+        ShopMate is a simple and user-friendly shopping website developed as a web project.
+        It allows users to browse products and experience a clean online shopping interface.
+    </p>
+    <p>
+        This website is created using HTML and CSS with responsive design and accessibility
+        features for better user experience.
+    </p>
+</div>
+
+</body>
+</html>
